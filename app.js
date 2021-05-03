@@ -7,19 +7,6 @@ const mongoose = require('mongoose');
 const app = express();
 
 require('./router')(app);
-// const customersRouter = require('./routes/customers');
-// const ordersRouter = require('./routes/orders');
-// const productsRouter = require('./routes/products');
-// const usersRouter = require('./routes/users');
-// const cartsRouter = require('./routes/carts');
-//
-// const base = process.env.BASE_URL;
-//
-// app.use('/api/customers', customersRouter);
-// app.use(`${base}/orders`, ordersRouter);
-// app.use(`${base}/products`, productsRouter);
-// app.use(`${base}/users`, usersRouter);
-// app.use(`${base}/carts`, cartsRouter);
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
